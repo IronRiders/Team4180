@@ -4,7 +4,7 @@
  */
 package Team4180.Listeners;
 
-import ImageRecognition.ImageRecognition.TargetInfo;
+//import ImageRecognition.ImageRecognition.TargetInfo;
 import Team4180.Input.Attack3Joystick;
 import edu.wpi.first.wpilibj.Servo;
 
@@ -38,7 +38,7 @@ public class CameraListener implements ButtonListener{
 			hServo.set(hServo.get()+SPEED);
 		}
 	}
-	public void track (TargetInfo info, TurretListener turret){
+	/*public void track (TargetInfo info, TurretListener turret){
 		double x = info.distanceX;
 		double y = info.distanceY;
 		double dist = info.distanceFromTarget;
@@ -65,6 +65,8 @@ public class CameraListener implements ButtonListener{
 			turret.joystickForward(1);
 		} else if (vServo.get() > 0 + gravityOffset){
 			turret.joystickBackwards(1);
-		}*/
+		}
+        
 	}
+    */
 }

@@ -1,19 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Team4180.Listeners;
 
 /**
- *
- * @author Alex
+ * Interface describing actions that a JoystickListener must react to.
  */
 public interface JoystickListener {
-    public void joystickForward(double speed);
-    public void joystickBackwards(double speed);
-    public void joystickRight(double speed);
-    public void joystickLeft(double speed);
-	public void joystickCentered();
-    public void joystickZ(double z);
-    public double[] getXYZ();
+    
+    /**
+     * This method will be called whenever the joystick is moved
+     * 
+     * @param x the X (+up / -down) position of the joystick
+     * @param y the Y (+left / -right) position of the joystick
+     * @param z the Z position of the joystick
+     */
+    public void joystickMoved(double x, double y, double z);
 }

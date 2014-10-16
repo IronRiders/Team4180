@@ -22,6 +22,7 @@ public class MovementListener implements JoystickListener {
     //Determines if the joystick has moved and updates    
     //Takes in the coordinates of joystick position
     public void joystickMoved(double x, double y, double z){
+        z = 1;
         driving.updateX(x);
         driving.updateY(y);
         driving.updateZ(z);
